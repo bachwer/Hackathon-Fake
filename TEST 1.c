@@ -34,6 +34,10 @@ int main() {
             break;
 
         case 2:
+            if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             printf("Phan co trong mang la: \n");
             for(int i = 0; i < n; i++) {
                 printf("%d ", arr[i]);
@@ -42,6 +46,10 @@ int main() {
             break;
 
         case 3:
+          if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             printf("Gia tri lon nhat cua mang la: ");
             for(int i = 0; i < n; i++) {
                 if(temp < arr[i]){
@@ -53,6 +61,10 @@ int main() {
             break;
 
         case 4:
+          if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             for (int i = 0; i < n; i++) {
                 for(int j = 1 ; j <= arr[i]; j++ ) {
                     if(arr[i] % j == 0) {
@@ -68,6 +80,10 @@ int main() {
             break;
 
         case 5:
+          if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             printf("Nhap vi tri can them: ");
             scanf("%d", &pos);
             pos--;
@@ -87,6 +103,10 @@ int main() {
             break;
 
         case 6:
+          if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             printf("Nhap vi tri can xoa; ");
             scanf("%d", &pos);
             pos--;
@@ -101,6 +121,10 @@ int main() {
             break;
 
         case 7:
+          if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             for (int i = 1; i < n; i++) {
                 for(int j = 0; j < i; j++) {
                     if(arr[i] < arr[j]) {
@@ -117,7 +141,10 @@ int main() {
             break;
 
         case 8:
-
+            if(n == 0){
+                printf("invalid!!!");
+                goto menu1;
+            }
             left = 0;
             right = n - 1;
         printf("Nhap phan tu can tim: ");
